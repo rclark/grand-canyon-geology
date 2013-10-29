@@ -1,0 +1,742 @@
+{
+  "Cba": [
+    "#ffebeb",
+    "#99b380"
+  ],
+  "Cm": [
+    "#ebebcc",
+    "#ffccde"
+  ],
+  "Ct": [
+    "#ffb3cc",
+    "#ccde66"
+  ],
+  "Dtb": [
+    "#664dff"
+  ],
+  "H20": [
+    "#ebffff"
+  ],
+  "IPMs": [
+    "#99ebde"
+  ],
+  "Jc": [
+    "#ccffde"
+  ],
+  "Je": [
+    "#cccc00"
+  ],
+  "Jk": [
+    "#99de99"
+  ],
+  "Jkn": [
+    "#b3ff99"
+  ],
+  "Jks": [
+    "#80ffde"
+  ],
+  "Jm": [
+    "#99decc"
+  ],
+  "Jn": [
+    "#ccff80"
+  ],
+  "Kd": [
+    "#ccff4d"
+  ],
+  "Km": [
+    "#b3eb80"
+  ],
+  "MIPs": [
+    "#99ebde"
+  ],
+  "MPu": [
+    "#66ffff"
+  ],
+  "Mr": [
+    "#b3b3ff"
+  ],
+  "Ms": [
+    "#dedeff"
+  ],
+  "Pc": [
+    "#deff00",
+    "#ccde66"
+  ],
+  "Pe": [
+    "#4dccff"
+  ],
+  "Pep": [
+    "#4debff"
+  ],
+  "Ph": [
+    "#4dffde",
+    "#99ccff"
+  ],
+  "Pk": [
+    "#ccffff",
+    "#deffff"
+  ],
+  "Pkf": [
+    "#ccebff",
+    "#b3ebff"
+  ],
+  "Pkh": [
+    "#deffff"
+  ],
+  "Pt": [
+    "#99ebff"
+  ],
+  "Ptb": [
+    "#cc80ff"
+  ],
+  "Ptw": [
+    "#4db3ff"
+  ],
+  "QTa": [
+    "#ff804d"
+  ],
+  "QTab": [
+    "#eb994d"
+  ],
+  "QTae": [
+    "#de9980"
+  ],
+  "QTai": [
+    "#ccb3ff"
+  ],
+  "QTap": [
+    "#ebcc66"
+  ],
+  "QTb": [
+    "#ebb3ff"
+  ],
+  "QTd": [
+    "#ebff99"
+  ],
+  "QTes": [
+    "#ebb34d"
+  ],
+  "QTg": [
+    "#eb9900"
+  ],
+  "QTg4": [
+    "#ffb366",
+    "#ff804c"
+  ],
+  "QTg5": [
+    "#eb9900",
+    "#ff6600"
+  ],
+  "QTg6": [
+    "#d6c299"
+  ],
+  "QTg7": [
+    "#d1b34d"
+  ],
+  "QTi": [
+    "#eb66ff",
+    "#ff00b3"
+  ],
+  "QTp": [
+    "#eb6699"
+  ],
+  "Qa": [
+    "#ffff80"
+  ],
+  "Qa1": [
+    "#ffebb3"
+  ],
+  "Qa2": [
+    "#dedeb3"
+  ],
+  "Qa3": [
+    "#ffcc80"
+  ],
+  "Qae": [
+    "#ebcc4d"
+  ],
+  "Qaf": [
+    "#cc6600"
+  ],
+  "Qao": [
+    "#ffcc80"
+  ],
+  "Qay": [
+    "#ffebb3"
+  ],
+  "Qb": [
+    "#cc80ff",
+    "#ff9999"
+  ],
+  "Qb1": [
+    "#ff99cc"
+  ],
+  "Qb6375": [
+    "#de4d66"
+  ],
+  "Qb6457": [
+    "#de4deb"
+  ],
+  "Qb6588": [
+    "#cc6699"
+  ],
+  "Qb6646": [
+    "#b399eb"
+  ],
+  "Qbf": [
+    "#ccb3ff"
+  ],
+  "Qbmb": [
+    "#de804d"
+  ],
+  "Qbmp": [
+    "#deb366"
+  ],
+  "Qbt": [
+    "#ebccff"
+  ],
+  "Qcbb": [
+    "#ffccff"
+  ],
+  "Qcbi": [
+    "#cc80de"
+  ],
+  "Qcbp": [
+    "#eb80b3"
+  ],
+  "Qd": [
+    "#ffff80",
+    "red",
+    "#ffcc80"
+  ],
+  "Qdb": [
+    "#ebff00"
+  ],
+  "Qdl": [
+    "#ff9999"
+  ],
+  "Qdlu": [
+    "#deccb3"
+  ],
+  "Qdm": [
+    "#ffb366"
+  ],
+  "Qdp": [
+    "#ebccb3"
+  ],
+  "Qec": [
+    "#eb9966"
+  ],
+  "Qes": [
+    "#ffebcc"
+  ],
+  "Qf": [
+    "#ebeb4d"
+  ],
+  "Qg1": [
+    "#ffde66"
+  ],
+  "Qg2": [
+    "#ebcc80"
+  ],
+  "Qg3": [
+    "#ffb34d"
+  ],
+  "Qgo": [
+    "#ebcc80"
+  ],
+  "Qgrb": [
+    "#ebebe8"
+  ],
+  "Qgrp": [
+    "#deb3b3"
+  ],
+  "Qgy": [
+    "#ffde66",
+    "#ebde66"
+  ],
+  "Qhb": [
+    "#ffccb3"
+  ],
+  "Qhp": [
+    "red"
+  ],
+  "Qi": [
+    "#ff00ff",
+    "#ff0000"
+  ],
+  "Qi1": [
+    "#ff0066"
+  ],
+  "Qkrb": [
+    "#b366ff"
+  ],
+  "Qkrp": [
+    "#cc80ff"
+  ],
+  "Ql": [
+    "#decc99",
+    "red"
+  ],
+  "Qlb": [
+    "#ffccde"
+  ],
+  "Qlp": [
+    "#ff80b3"
+  ],
+  "Qlsb": [
+    "#ff80ff"
+  ],
+  "Qlsp": [
+    "red"
+  ],
+  "Qltb": [
+    "#ebccff"
+  ],
+  "Qmb": [
+    "#ffccff"
+  ],
+  "Qmbi": [
+    "#cc80de"
+  ],
+  "Qmcb": [
+    "#cc99cc"
+  ],
+  "Qmlp": [
+    "#cc6699"
+  ],
+  "Qmp": [
+    "#eb80b3"
+  ],
+  "Qmrb": [
+    "#de804d"
+  ],
+  "Qmrp": [
+    "#deb366"
+  ],
+  "Qp": [
+    "#cc80b3",
+    "red",
+    "#ff6666"
+  ],
+  "Qp1": [
+    "#ff6699"
+  ],
+  "Qp6375": [
+    "#eb6699"
+  ],
+  "Qp6457": [
+    "#eb66ff"
+  ],
+  "Qp6588": [
+    "#de80b3"
+  ],
+  "Qp6646": [
+    "#ccb3ff"
+  ],
+  "Qps": [
+    "#deff99"
+  ],
+  "Qpvb": [
+    "#eb664d"
+  ],
+  "Qpvp": [
+    "#eb9966"
+  ],
+  "Qr": [
+    "red",
+    "#ffcc99"
+  ],
+  "Qs": [
+    "#ffffb3"
+  ],
+  "Qsb": [
+    "#ff99cc",
+    "#ffccff"
+  ],
+  "Qsc": [
+    "#ebebeb"
+  ],
+  "Qsd": [
+    "#ebff00"
+  ],
+  "Qsfp": [
+    "#ffdeeb"
+  ],
+  "Qslr": [
+    "#996699"
+  ],
+  "Qsp": [
+    "#ff6699",
+    "red",
+    "#deb3b3"
+  ],
+  "Qss": [
+    "#deb3b3"
+  ],
+  "Qt": [
+    "#ffff00"
+  ],
+  "Qtb": [
+    "#ffde80"
+  ],
+  "Qtg": [
+    "red"
+  ],
+  "Qti": [
+    "#ff0080"
+  ],
+  "Qtp": [
+    "red"
+  ],
+  "Qtr": [
+    "#ffff00",
+    "#ffcc99"
+  ],
+  "Qv": [
+    "#ffff80"
+  ],
+  "Qwb": [
+    "#b399eb"
+  ],
+  "Qyab": [
+    "#ff80ff"
+  ],
+  "Qyap": [
+    "#de4dde"
+  ],
+  "Qyb": [
+    "#ebebeb"
+  ],
+  "Qyp": [
+    "#deb3b3"
+  ],
+  "T227i": [
+    "#ff004d"
+  ],
+  "T2i": [
+    "#cc0066"
+  ],
+  "TRc": [
+    "#99ffcc"
+  ],
+  "TRco": [
+    "#99eb4d"
+  ],
+  "TRcp": [
+    "#99ffcc"
+  ],
+  "TRcs": [
+    "#99cccc"
+  ],
+  "TRm": [
+    "#deff66"
+  ],
+  "TRmhm": [
+    "#80de80"
+  ],
+  "TRms": [
+    "#4dffb3"
+  ],
+  "TRmss": [
+    "#80ff66"
+  ],
+  "TRmw": [
+    "#b3ffb3"
+  ],
+  "Tao": [
+    "#deeb99"
+  ],
+  "Tay": [
+    "#cceb99"
+  ],
+  "Tb": [
+    "#de80cc",
+    "#ffdeeb"
+  ],
+  "Tba": [
+    "#ffdeeb"
+  ],
+  "Tbb": [
+    "#cccceb"
+  ],
+  "Tbi": [
+    "#cc9966",
+    "#cc80eb"
+  ],
+  "Tbmb": [
+    "#ffb3de"
+  ],
+  "Tbmi": [
+    "#ff4dde"
+  ],
+  "Tbpb": [
+    "#eb664d"
+  ],
+  "Tc": [
+    "#cc99b3"
+  ],
+  "Teb": [
+    "#cc4dff"
+  ],
+  "Tei": [
+    "#9900ff"
+  ],
+  "Tep": [
+    "#de80ff"
+  ],
+  "Tg": [
+    "#ebff00"
+  ],
+  "Tgb": [
+    "#ff99ff"
+  ],
+  "Tgc": [
+    "#99eb4d"
+  ],
+  "Tgg": [
+    "#99ccff"
+  ],
+  "Tgi": [
+    "#eb4dff"
+  ],
+  "Tgl": [
+    "#ebde00"
+  ],
+  "Tgp": [
+    "#cc66cc"
+  ],
+  "Tgr": [
+    "#99ff00"
+  ],
+  "Tgs": [
+    "#999999"
+  ],
+  "Tgx": [
+    "#ccff4d"
+  ],
+  "Thma": [
+    "#cccceb"
+  ],
+  "Ths": [
+    "#b3eb80"
+  ],
+  "Ti": [
+    "#ff00ff",
+    "#cc80eb"
+  ],
+  "Tmb": [
+    "#b399de"
+  ],
+  "Tmi": [
+    "#b380cc"
+  ],
+  "Tmlb": [
+    "#9980cc"
+  ],
+  "Tocb": [
+    "#de4deb"
+  ],
+  "Tp": [
+    "#cccccc",
+    "#ff99de",
+    "#eb99de"
+  ],
+  "Tp6i": [
+    "#ff4d4d"
+  ],
+  "Tpb": [
+    "#ebb3eb"
+  ],
+  "Tpi": [
+    "#996699"
+  ],
+  "Tpkb": [
+    "#cc66eb"
+  ],
+  "Tpki": [
+    "#b34dde"
+  ],
+  "Tpp": [
+    "#cc99cc"
+  ],
+  "Tr": [
+    "#b380cc"
+  ],
+  "Trb": [
+    "#cc99b3"
+  ],
+  "Tri": [
+    "#de4d00"
+  ],
+  "Trm": [
+    "#deff66"
+  ],
+  "Ts": [
+    "#ebeb99"
+  ],
+  "Ts1": [
+    "#ebeb99"
+  ],
+  "Ts2": [
+    "#deb380"
+  ],
+  "Tsb": [
+    "#cccc99"
+  ],
+  "Tsgb": [
+    "#b38080"
+  ],
+  "Tsgi": [
+    "#b34d80"
+  ],
+  "Tsi": [
+    "#cc9966"
+  ],
+  "Tsp": [
+    "#eb80eb"
+  ],
+  "Tv": [
+    "#eb6600"
+  ],
+  "Tvi": [
+    "#cc80ff"
+  ],
+  "Twb": [
+    "#ffb3ff"
+  ],
+  "Twi": [
+    "#ff4dff"
+  ],
+  "Tyb": [
+    "#de80cc"
+  ],
+  "Tyi": [
+    "#cc9966"
+  ],
+  "Typ": [
+    "#cccccc"
+  ],
+  "Xbr": [
+    "#669900",
+    "#f6c8b2"
+  ],
+  "Xc": [
+    "#b366ff"
+  ],
+  "Xdg": [
+    "#ff4d66"
+  ],
+  "Xec": [
+    "#ff0000"
+  ],
+  "Xg": [
+    "#ff9900",
+    "#b3b3ff"
+  ],
+  "Xgd": [
+    "#ffcc00",
+    "#c165b2"
+  ],
+  "Xgr": [
+    "#ff6600",
+    "#eb4d00"
+  ],
+  "Xm": [
+    "#eb0080"
+  ],
+  "Xo": [
+    "#990000"
+  ],
+  "Xr": [
+    "#99b34d",
+    "#d86584"
+  ],
+  "Xs": [
+    "#ff66b3"
+  ],
+  "Xu": [
+    "#deebb3"
+  ],
+  "Xum": [
+    "#009900"
+  ],
+  "Xv": [
+    "#ebb3ff",
+    "#eb99eb",
+    "#c266ff"
+  ],
+  "YZn": [
+    "#dfb2b2"
+  ],
+  "Yb": [
+    "#b3b300",
+    "#994c00"
+  ],
+  "Yc": [
+    "#ffbfff"
+  ],
+  "Yd": [
+    "#ebcc4d"
+  ],
+  "Ydc": [
+    "#d6d6d6"
+  ],
+  "Yde": [
+    "#b2b2b2"
+  ],
+  "Ydo": [
+    "#7f7f7f"
+  ],
+  "Yds": [
+    "#656565"
+  ],
+  "Yg": [
+    "#ff9900"
+  ],
+  "Yh": [
+    "#b34d66",
+    "#d08b8b"
+  ],
+  "Yi": [
+    "#ff4dff"
+  ],
+  "Ys": [
+    "#ffb366",
+    "#cb7f00"
+  ],
+  "Zgcc": [
+    "#d6c29e"
+  ],
+  "Zgd": [
+    "#d0b2e7"
+  ],
+  "Zgj": [
+    "#999999"
+  ],
+  "Zgt": [
+    "#d6b09e"
+  ],
+  "Zka": [
+    "#d7d79e"
+  ],
+  "Zkcb": [
+    "#b09454"
+  ],
+  "Zkw": [
+    "#c7d79e"
+  ],
+  "Zs": [
+    "#cc8a66"
+  ],
+  "lPMs": [
+    "#99ebde"
+  ],
+  "river": [
+    "#ebffff"
+  ],
+  "water": [
+    "#ebffff"
+  ]
+}
