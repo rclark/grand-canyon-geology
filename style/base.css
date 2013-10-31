@@ -11,7 +11,10 @@ html, body, #map { height: 100%; }
 #title-container {
     position: absolute;
     bottom: 10px;
-    left: 10px;
+}
+
+#title-content {
+    margin: 0 10px;
 }
 
 .scroll-title {
