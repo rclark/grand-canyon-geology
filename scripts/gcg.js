@@ -7,7 +7,7 @@ var gcg = {
   })
 };
 
-L.mapbox.tileLayer('http://a.tiles.usgin.org/grand-canyon-retina/tiles.json', {
+L.mapbox.tileLayer('http://a.tiles.usgin.org/grand-canyon/tiles.json', {
   retinaVersion: 'http://a.tiles.usgin.org/grand-canyon-retina/tiles.json'
 }).addTo(gcg.map);
 
