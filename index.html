@@ -6,11 +6,11 @@
     <title>Geology of the Grand Canyon</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v1.4.0/mapbox.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v1.4.0/mapbox.css' rel='stylesheet' />
     <!--[if lte IE 8]>
-      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+      <link href='https://api.tiles.mapbox.com/mapbox.js/v1.4.0/mapbox.ie.css' rel='stylesheet'>
     <![endif]-->
-    <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
     <link rel="stylesheet" href="style/base.css" />
   </head>
   <body>
@@ -34,13 +34,14 @@
       </div>
     
       <div class="pure-g-r">
-        <div class="pure-u-3-4 pure-hidden-phone"></div>
-        <div class="pure-u-1-4">
+        <div class="pure-u-1-4 pure-hidden-phone"></div>
+        <div class="pure-u-1-2">
           <h3 class="scroll-title">View the Map</h3>
           <button class="scroll-btn pure-button">
             <i class="fa fa-chevron-up"></i>
           </button>
         </div>
+        <div class="pure-u-1-4 pure-hidden-phone"></div>
       </div>
     </section>
     <div class="pure-g-r">

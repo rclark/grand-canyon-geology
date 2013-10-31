@@ -8,6 +8,6 @@ var gcg = {
 };
 
 L.tileLayer('http://{s}.tiles.usgin.org/grand-canyon/{z}/{x}/{y}.png').addTo(gcg.map);
-L.tileLayer('http://{s}.tiles.mapbox.com/v3/rclark.map-55q8nfsk/{z}/{x}/{y}.png', {
-  attribution: '<a href="https://www.mapbox.com/about/maps/">Terms & Feedback</a>'
+L.mapbox.tileLayer('rclark.map-55q8nfsk', {
+  detectRetina: true
 }).addTo(gcg.map);
