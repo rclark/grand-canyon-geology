@@ -6,4 +6,4 @@ $('.scroll-btn').click(function (evt) {
 $('#info').waypoint(function (direction) {
   var position = direction === 'up' ? 0 : $('#info').position().top;
   $("html, body").animate({scrollTop: position});
-}, { offset: '50%' });
+}, {offset: '50%'});
