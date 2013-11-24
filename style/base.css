@@ -32,6 +32,23 @@ html, body, #map { height: 100%; }
     border-radius: 0;
 }
 
+.hidden {
+    display: none;
+}
+
+#map {
+    cursor: pointer;
+}
+
+#footer {
+    color: rgb(150,150,150);
+    font-size: 0.9em;
+}
+
+#footer a {
+    color: rgb(80,80,80);
+}
+
 /* Leaflet Popup Overrides */
 .leaflet-popup-content-wrapper {
     border-radius: 2px;

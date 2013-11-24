@@ -1,0 +1,47 @@
+@font-face { 
+    font-family: "FGDCGeoAge";
+    src: url("http://ncgmp09.github.io/fgdc-geoage-font/fgdcgeoage.eot");
+    src: url("http://ncgmp09.github.io/fgdc-geoage-font/fgdcgeoage.eot?#iefix") format("embedded-opentype"),
+         url("http://ncgmp09.github.io/fgdc-geoage-font/fgdcgeoage.woff") format("woff"),
+         url("http://ncgmp09.github.io/fgdc-geoage-font/fgdcgeoage.ttf") format("truetype"),
+         url("http://ncgmp09.github.io/fgdc-geoage-font/fgdcgeoage.svg#FGDCGeoAge") format("svg");
+}
+
+.description-container {
+  position: relative;
+}
+
+.unit-label {
+    position: absolute;
+    left: 10px;
+    font-family: "FGDCGeoAge";
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border: 2px solid #000;
+    box-sizing: border-box;
+}
+
+.description-title {
+  box-sizing: border-box;
+  min-height: 60px;
+  padding-top: 24px;
+  margin: 0;
+}
+
+.description {
+    margin-left: 80px;
+}
+
+#hover-description {
+    padding: 15px;
+    background-color: white;
+    background-color: rgba(255,255,255,0.8);
+    border: 1px solid rgb(230,230,230);
+    border-bottom: none;
+}
+
+#full-description {
+    margin: 20px 0;
+}
