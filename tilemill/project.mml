@@ -1,0 +1,254 @@
+{
+  "bounds": [
+    -114.0326,
+    35.4754,
+    -110.9592,
+    36.5242
+  ],
+  "center": [
+    -112.4561,
+    35.9926,
+    8
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "geopolys",
+    "template_teaser": "",
+    "fields": [
+      "id"
+    ],
+    "template_full": ""
+  },
+  "minzoom": 0,
+  "maxzoom": 14,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss",
+    "geopolys.mss",
+    "raster.mss",
+    "geolines.mss"
+  ],
+  "Layer": [
+    {
+      "extent": [
+        -114.00079862192217,
+        35.49591706179214,
+        -111.00069545367286,
+        36.50001147423125
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "fullgeopolys",
+        "key_field": "id",
+        "geometry_field": "",
+        "extent_cache": "auto",
+        "extent": "-12690510.8526189,4231480.18898259,-12356540.8956021,4369642.09962137",
+        "dbname": "grandcanyon",
+        "id": "geopolys",
+        "project": "grand-canyon",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      },
+      "id": "geopolys",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "geopolys"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -114.85670673310587,
+        31.31912459708976,
+        -108.96744159801551,
+        37.029364636545644
+      ],
+      "id": "arizonaslope",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/r/Documents/AZ Elevation/slope/arizona-slope.vrt",
+        "band": "1"
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "band": "1"
+      },
+      "name": "arizonaslope"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -113.38307730350152,
+        34.23698541593533,
+        -110.741945835894,
+        37.010090061869356
+      ],
+      "id": "coconino",
+      "class": "shade",
+      "Datasource": {
+        "file": "/Users/r/Documents/AZ Elevation/shade/coconino.tif",
+        "band": "1"
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "band": "1"
+      },
+      "name": "coconino"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -114.79482693349723,
+        34.184184619597815,
+        -112.47814858590664,
+        37.029364636545644
+      ],
+      "id": "mohave",
+      "class": "shade",
+      "Datasource": {
+        "file": "/Users/r/Documents/AZ Elevation/shade/mohave.tif",
+        "band": "1"
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "band": "1"
+      },
+      "name": "mohave",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -113.37736904638228,
+        33.86689517155504,
+        -111.46025759354208,
+        35.55231513277136
+      ],
+      "id": "yavapai",
+      "class": "shade",
+      "Datasource": {
+        "file": "/Users/r/Documents/AZ Elevation/shade/yavapai.tif",
+        "band": "1"
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {
+        "band": "1"
+      },
+      "name": "yavapai",
+      "status": "off"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -117.67632008240861,
+        30.48746754016945,
+        -107.30158191418673,
+        38.843060552207106
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select * from planet_osm_line where (highway = 'path' or highway = 'footway') and tags->'name' != '') as data",
+        "key_field": "",
+        "geometry_field": "way",
+        "extent_cache": "auto",
+        "extent": "-13099668.03,3566364.41,-11944757.46,4699216.21",
+        "dbname": "azosm",
+        "id": "trails",
+        "project": "grand-canyon",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      },
+      "id": "trails",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "trails"
+    },
+    {
+      "extent": [
+        -114.00079862192217,
+        35.49591706179214,
+        -111.00069545367286,
+        36.50001147423125
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "geolines",
+        "key_field": "",
+        "geometry_field": "",
+        "extent_cache": "auto",
+        "extent": "-12690510.8526189,4231480.18898259,-12356540.8956021,4369642.09962137",
+        "dbname": "grandcanyon"
+      },
+      "id": "geolines",
+      "class": "geolines",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "geolines"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -117.37603385434745,
+        31.121275027735074,
+        -108.47626155984588,
+        38.84270134176444
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select name, way, osm_id from planet_osm_point where waterway = 'rapids') as data",
+        "key_field": "",
+        "geometry_field": "way",
+        "extent_cache": "auto",
+        "extent": "-13066240.32,3648509.05,-12075522.2,4699164.87",
+        "dbname": "azosm",
+        "id": "rapids",
+        "project": "grand-canyon",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      },
+      "id": "rapids",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "rapids"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -117.67632008240861,
+        30.48746754016945,
+        -107.30158191418673,
+        38.843060552207106
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select * from planet_osm_line where (highway = 'path' or highway = 'footway') and tags->'name' != '') as data",
+        "key_field": "",
+        "geometry_field": "",
+        "extent_cache": "auto",
+        "extent": "-13099668.03,3566364.41,-11944757.46,4699216.21",
+        "dbname": "azosm"
+      },
+      "id": "trail-labels",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "trail-labels"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "_basemap": "",
+  "name": "Grand Canyon Geology",
+  "description": "Geologic Map of the Grand Canyon and Vicinity",
+  "attribution": "USGS and Ryan Clark",
+  "legend": "",
+  "version": "0.0.4"
+}
