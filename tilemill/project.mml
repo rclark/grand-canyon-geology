@@ -17,7 +17,7 @@
     "fields": [
       "id"
     ],
-    "template_full": ""
+    "template_full": "{{{unit}}}{{{unitname}}}{{{description}}}{{{color}}}"
   },
   "minzoom": 0,
   "maxzoom": 14,
@@ -45,7 +45,7 @@
         "extent": "-12690510.8526189,4231480.18898259,-12356540.8956021,4369642.09962137",
         "dbname": "grandcanyon",
         "id": "geopolys",
-        "project": "grand-canyon",
+        "project": "grand-canyon-geology",
         "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
       },
       "id": "geopolys",
@@ -116,8 +116,7 @@
       "advanced": {
         "band": "1"
       },
-      "name": "mohave",
-      "status": "off"
+      "name": "mohave"
     },
     {
       "geometry": "raster",
@@ -138,8 +137,7 @@
       "advanced": {
         "band": "1"
       },
-      "name": "yavapai",
-      "status": "off"
+      "name": "yavapai"
     },
     {
       "geometry": "linestring",
@@ -151,12 +149,12 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select * from planet_osm_line where (highway = 'path' or highway = 'footway') and tags->'name' != '') as data",
+        "table": "(select * from planet_osm_line where (tags->'highway' = 'path' or tags->'highway' = 'footway') and tags->'name' != '') as data",
         "key_field": "",
         "geometry_field": "way",
         "extent_cache": "auto",
         "extent": "-13099668.03,3566364.41,-11944757.46,4699216.21",
-        "dbname": "azosm",
+        "dbname": "swosm",
         "id": "trails",
         "project": "grand-canyon",
         "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
@@ -201,12 +199,12 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select name, way, osm_id from planet_osm_point where waterway = 'rapids') as data",
+        "table": "(select tags->'name' as name, way, osm_id from planet_osm_point where tags->'waterway' = 'rapids') as data",
         "key_field": "",
         "geometry_field": "way",
         "extent_cache": "auto",
         "extent": "-13066240.32,3648509.05,-12075522.2,4699164.87",
-        "dbname": "azosm",
+        "dbname": "swosm",
         "id": "rapids",
         "project": "grand-canyon",
         "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
@@ -216,7 +214,8 @@
       "srs-name": "900913",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "advanced": {},
-      "name": "rapids"
+      "name": "rapids",
+      "status": "off"
     },
     {
       "geometry": "linestring",
@@ -228,12 +227,12 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select * from planet_osm_line where (highway = 'path' or highway = 'footway') and tags->'name' != '') as data",
+        "table": "(select tags->'name' as name, way, osm_id from planet_osm_line where (tags->'highway' = 'path' or tags->'highway' = 'footway') and tags->'name' != '') as data",
         "key_field": "",
         "geometry_field": "",
         "extent_cache": "auto",
         "extent": "-13099668.03,3566364.41,-11944757.46,4699216.21",
-        "dbname": "azosm"
+        "dbname": "swosm"
       },
       "id": "trail-labels",
       "class": "",
@@ -245,7 +244,6 @@
   ],
   "scale": 1,
   "metatile": 2,
-  "_basemap": "",
   "name": "Grand Canyon Geology",
   "description": "Geologic Map of the Grand Canyon and Vicinity",
   "attribution": "USGS and Ryan Clark",
