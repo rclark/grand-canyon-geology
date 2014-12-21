@@ -2,7 +2,7 @@ var gcg = {
   map: L.map('map', {
     center: [36.14951909060777,-111.98741912841797],
     zoom: 11,
-    maxZoom: L.Browser.retina ? 13 : 14,
+    maxZoom: 14,
     minZoom: 10,
     maxBounds: L.latLngBounds([[35.4754,-114.0326],[36.5242,-110.9592]])
   }),
@@ -21,7 +21,7 @@ var gcg = {
 
     // If this is a hover, update the content on the page
     if (evt.type === 'mouseover') {
-      if ($('#hover-description').hasClass('hidden')) $('#hover-description').removeClass('hidden')
+      if ($('#hover-description').hasClass('hidden')) $('#hover-description').removeClass('hidden');
 
       template = $('#partial-unit').html();
       html = Mustache.to_html(template, unit);
@@ -33,21 +33,19 @@ var gcg = {
       template = $('#full-unit').html();
       html = Mustache.to_html(template, unit);
       $('#full-description').html(html);
-      $('.scroll-btn').trigger('click');  
+      $('.scroll-btn').trigger('click');
     }
   }
 };
 
-L.mapbox.tileLayer('rclark.h39e40a5', {
-  detectRetina: true
-}).addTo(gcg.map);
+L.mapbox.tileLayer('rclark.d2f57dc3', { accessToken: 'pk.eyJ1IjoicmNsYXJrIiwiYSI6IlQwaklqazAifQ.OWuTG3XPSdvoq_zGL0-1tA' }).addTo(gcg.map);
 
-L.mapbox.gridLayer('rclark.h39e40a5')
+L.mapbox.gridLayer('rclark.h39e40a5', { accessToken: 'pk.eyJ1IjoicmNsYXJrIiwiYSI6IlQwaklqazAifQ.OWuTG3XPSdvoq_zGL0-1tA' })
   .on('mouseover', gcg.gridInteraction)
   .on('click', gcg.gridInteraction)
   .addTo(gcg.map);
 
-L.mapbox.tileLayer('rclark.map-55q8nfsk', {
-  attribution: '<a href="https://www.mapbox.com/about/maps/">Terms & Feedback</a>',
-  detectRetina: true
-}).addTo(gcg.map);
+// L.mapbox.tileLayer('rclark.map-55q8nfsk', {
+//   attribution: '<a href="https://www.mapbox.com/about/maps/">Terms & Feedback</a>',
+//   detectRetina: true
+// }).addTo(gcg.map);

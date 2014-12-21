@@ -1,0 +1,80 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: ''
+  rev: ''
+  saveCenter: true
+attribution: "<a href=\"http://geomaps.wr.usgs.gov/arizona/\">George Billingsley et al.</a> and Ryan Clark, 2014"
+center: 
+  - -111.4268
+  - 36.0684
+  - 12
+description: ''
+Layer: 
+  - id: geounits
+    Datasource: 
+      dbname: grandcanyon
+      extent: -12690510.8526189 4231480.18898259,-12356540.8956021,4369642.09962137
+      geometry_field: geometry
+      geometry_table: ''
+      host: ''
+      key_field: ''
+      max_size: 512
+      password: ''
+      port: ''
+      table: |-
+        (
+          select 
+          	id, 
+          	unit, 
+          	unitname, 
+          	description,
+          	st_simplify(geom, !pixel_width!) as geometry
+          from fullgeopolys
+          where geom && !bbox!
+        ) as data
+      type: postgis
+      user: r
+    description: ''
+    fields: 
+      id: Number
+      description: String
+      unit: String
+      unitname: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
+  - id: geolines
+    Datasource: 
+      dbname: grandcanyon
+      extent: -12690510.8526189,4231480.18898259,-12356540.8956021,4369642.09962137
+      geometry_field: geometry
+      geometry_table: ''
+      host: ''
+      key_field: ''
+      max_size: 512
+      password: ''
+      port: ''
+      table: |-
+        (
+          select 
+          	id,
+          	fgdc,
+            original,
+            st_simplify(geom, !pixel_width!) as geometry
+          from geolines
+          where geom && !bbox!
+        ) as data
+      type: postgis
+      user: r
+    description: ''
+    fields: 
+      id: Number
+      fgdc: String
+      original: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
+maxzoom: 14
+minzoom: 10
+name: Geologic Map of the Grand Canyon
