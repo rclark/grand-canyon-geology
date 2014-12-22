@@ -38,14 +38,12 @@ var gcg = {
   }
 };
 
-L.mapbox.tileLayer('rclark.d2f57dc3', { accessToken: 'pk.eyJ1IjoicmNsYXJrIiwiYSI6IlQwaklqazAifQ.OWuTG3XPSdvoq_zGL0-1tA' }).addTo(gcg.map);
+L.mapbox.tileLayer('rclark.d2f57dc3', {
+  accessToken: 'pk.eyJ1IjoicmNsYXJrIiwiYSI6IlQwaklqazAifQ.OWuTG3XPSdvoq_zGL0-1tA',
+  attribution: '<a href="http://geomaps.wr.usgs.gov/arizona/">George Billingsley et al.</a> <a href="https://www.mapbox.com/about/maps/">© Mapbox © OpenStreetMap</a> and Ryan Clark, 2014'
+}).addTo(gcg.map);
 
 L.mapbox.gridLayer('rclark.h39e40a5', { accessToken: 'pk.eyJ1IjoicmNsYXJrIiwiYSI6IlQwaklqazAifQ.OWuTG3XPSdvoq_zGL0-1tA' })
   .on('mouseover', gcg.gridInteraction)
   .on('click', gcg.gridInteraction)
   .addTo(gcg.map);
-
-// L.mapbox.tileLayer('rclark.map-55q8nfsk', {
-//   attribution: '<a href="https://www.mapbox.com/about/maps/">Terms & Feedback</a>',
-//   detectRetina: true
-// }).addTo(gcg.map);
