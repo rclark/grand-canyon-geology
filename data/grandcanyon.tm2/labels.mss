@@ -1,31 +1,10 @@
-// LABEL.MSS CONTENTS:
-// - Ocean & Marine Labels
-// - Place Names
-//     - Countries
-//     - States
-//     - Cities
-//     - Towns
-//     - Villages
-//     - Suburbs
-//     - Neighbourhoods & Hamlets
-// - Water Labels 
-// - Road Labels
-// - House numbers
-
-// Name field to use. Language options:
-// name (local), name_en, name_fr, name_es, name_de
 @name: '[name]';
-
-// set up font sets for various weights and styles
 @sans_lt:           "Open Sans Regular","Arial Unicode MS Regular";
 @sans_lt_italic:    "Open Sans Italic","Arial Unicode MS Regular";
 @sans:              "Open Sans Semibold","Arial Unicode MS Regular";
 @sans_bold:         "Open Sans Bold","Arial Unicode MS Regular";
 @sans_italic:       "Open Sans Semibold Italic","Arial Unicode MS Regular";
 @sans_bold_italic:  "Open Sans Bold Italic","Arial Unicode MS Regular";
-
-// We set up a default halo color for places so you can edit them all
-// at once or override each individually:
 @place_halo:        fadeout(#fff,80);
 @country_text:      @land * 0.2;
 @country_halo:      @place_halo;
@@ -42,62 +21,11 @@
 @other_halo:        @place_halo;
 @locality_text:     #aaa;
 @locality_halo:     @land;
-// Also used for other small places: hamlets, suburbs, localities:
 @village_text:      #888;
 @village_halo:      @place_halo;
 @transport_text:    #445;
 
-
-// =====================================================================
-// PLACE NAMES
-// =====================================================================
-
-// Cities ______________________________________________________________
-
-// City labels with dots for low zoom levels.
-#place_label::citydots[type='city'][zoom>=4][zoom<=7][localrank<=3] {
-  // explicitly defining all the `ldir` values we're going
-  // to use shaves a bit off the final project.xml size
-  [ldir='N'],[ldir='S'],[ldir='E'],[ldir='W'],
-  [ldir='NE'],[ldir='SE'],[ldir='SW'],[ldir='NW'] {
-    shield-file: url("img/dot-small.png");
-    shield-unlock-image: true;
-    shield-name: @name;
-    shield-face-name: @sans;
-    shield-placement: point;
-    shield-fill: @city_text;
-    shield-halo-fill: @city_halo;
-    shield-halo-radius: 2;
-    shield-halo-rasterizer: fast;
-    shield-min-distance: 2;
-    shield-size: 11;
-    [scalerank>=0][scalerank<=1] {
-      [zoom=5] { shield-size: 13; }
-      [zoom>=6] { shield-size: 14; }
-    }
-    [scalerank>=2][scalerank<=3] {
-      [zoom=5] { shield-size: 11; }
-      [zoom=6] { shield-size: 12; }
-      [zoom=7] { shield-size: 13; }
-    }
-    [scalerank>=4][scalerank<=5] {
-      [zoom=6] { shield-size: 11; }
-      [zoom=7] { shield-size: 12; }
-    }
-    [ldir='E'] { shield-text-dx: 4; }
-    [ldir='W'] { shield-text-dx: -4; }
-    [ldir='N'] { shield-text-dy: -4; }
-    [ldir='S'] { shield-text-dy: 4; }
-    [ldir='NE'] { shield-text-dx: 3; shield-text-dy: -3; }
-    [ldir='SE'] { shield-text-dx: 3; shield-text-dy: 3; }
-    [ldir='SW'] { shield-text-dx: -3; shield-text-dy: 3; }
-    [ldir='NW'] { shield-text-dx: -3; shield-text-dy: -3; }
-  }
-}
-
-// For medium to high zoom levels we do away with the dot
-// and center place labels on their point location.
-#place_label[type='city'][zoom>=8][zoom<=15][localrank<=3] {
+#place_label[type='city'][zoom>=8][zoom<=14][localrank<=3] {
   text-name: @name;
   text-face-name: @sans;
   text-placement: point;
@@ -109,25 +37,6 @@
   text-min-distance: 5;
   text-line-spacing: -4;
   [zoom>=12] { text-halo-radius: 3; }
-  // We keep the scalerank filters the same for each zoom level.
-  // This is slightly inefficient-looking CartoCSS, but it saves
-  // some space in the project.xml
-  [zoom=8] {
-    text-size: 13;
-    text-wrap-width: 60;
-    [scalerank>=0][scalerank<=1] { text-size: 18; }
-    [scalerank>=2][scalerank<=3] { text-size: 16; }
-    [scalerank>=4][scalerank<=5] { text-size: 15; }
-    [scalerank>=6] { text-size: 13; }
-  }
-  [zoom=9] {
-    text-size: 14;
-    text-wrap-width: 60;
-    [scalerank>=0][scalerank<=1] { text-size: 19; }
-    [scalerank>=2][scalerank<=3] { text-size: 17; }
-    [scalerank>=4][scalerank<=5] { text-size: 16; }
-    [scalerank>=6] { text-size: 14; }
-  }
   [zoom=10] {
     text-size: 15;
     text-wrap-width: 70;
@@ -169,20 +78,9 @@
     [scalerank>=4][scalerank<=5] { text-size: 19; }
     [scalerank>=6] { text-size: 18; }
   }
-  [zoom=15] {
-    text-fill: lighten(@city_text,10);
-    text-size: 20;
-    text-wrap-width: 400;
-    [scalerank>=0][scalerank<=1] { text-size: 20; }
-    [scalerank>=2][scalerank<=3] { text-size: 20; }
-    [scalerank>=4][scalerank<=5] { text-size: 20; }
-    [scalerank>=6] { text-size: 19; }
-  }
 }
 
-// Towns _______________________________________________________________
-
-#place_label[type='town'][zoom>=8][zoom<=17] {
+#place_label[type='town'][zoom>=8][zoom<=14] {
   text-name: @name;
   text-face-name: @sans_lt;
   text-placement: point;
@@ -200,13 +98,9 @@
   [zoom>=12] { text-size: 15; text-wrap-width: 80; }
   [zoom>=13] { text-size: 16; text-wrap-width: 120; }
   [zoom>=14] { text-size: 18; text-wrap-width: 160; text-halo-radius: 3; }
-  [zoom>=15] { text-size: 20; text-wrap-width: 200; }
-  [zoom>=16] { text-size: 22; text-wrap-width: 240; }
 }
 
-// Villages ____________________________________________________________
-
-#place_label[type='village'][zoom>=10][zoom<=17] {
+#place_label[type='village'][zoom>=10][zoom<=14] {
   text-name: @name;
   text-face-name: @sans;
   text-placement: point;
@@ -222,12 +116,7 @@
   [zoom>=12] { text-size: 12; }
   [zoom>=13] { text-wrap-width: 80; }
   [zoom>=14] { text-size: 14; text-wrap-width: 100; }
-  [zoom>=15] { text-size: 16; text-wrap-width: 120; }
-  [zoom>=16] { text-size: 18; text-wrap-width: 160; }
-  [zoom=17] { text-size: 20; text-wrap-width: 200; }
 }
-
-// Suburbs _____________________________________________________________
 
 #place_label[type='suburb'][zoom>=12][zoom<=17] {
   text-name: @name;
@@ -245,12 +134,7 @@
   [zoom=12] { text-min-distance: 30; }
   [zoom>=13] { text-size: 12; text-min-distance: 20; }
   [zoom>=14] { text-size: 13; text-wrap-width: 80; }
-  [zoom>=15] { text-size: 14; text-wrap-width: 120; }
-  [zoom>=16] { text-size: 16; text-wrap-width: 160; }
-  [zoom>=17] { text-size: 20; text-wrap-width: 200; }
 }
-
-// Neighbourhoods & Hamlets ____________________________________________
 
 #place_label[zoom>=13][zoom<=18] {
   [type='hamlet'],
@@ -268,22 +152,11 @@
     text-min-distance: 4;
     text-line-spacing: -2;
     [zoom>=14] { text-size: 12; text-wrap-width: 80; }
-    [zoom>=16] { text-size: 14; text-wrap-width: 100; }
-    [zoom>=17] { text-size: 16; text-wrap-width: 130; }
-    [zoom>=18] { text-size: 18; text-wrap-width: 160; }
   }
 }
 
-
-// =====================================================================
-// WATER LABELS
-// =====================================================================
-
 #water_label {
-  [zoom<=15][area>200000],
-  [zoom=16][area>50000],
-  [zoom=17][area>10000],
-  [zoom>=18][area>0]{
+  [zoom<=15][area>200000] {
     text-name: @name;
     text-halo-radius: 2;
     text-halo-rasterizer: fast;
@@ -295,37 +168,10 @@
     text-face-name: @sans_italic;
     text-fill: @water_dark;
   }
-  [zoom>=14][area>3200000],
-  [zoom>=15][area>800000],
-  [zoom>=16][area>200000],
-  [zoom>=17][area>50000],
-  [zoom>=18][area>10000] {
-    text-size: 12;
-    text-wrap-width: 75;
-  }
-  [zoom>=15][area>3200000],
-  [zoom>=16][area>800000],
-  [zoom>=17][area>200000],
-  [zoom>=18][area>50000] {
-    text-size: 14;
-    text-wrap-width: 100;
-  }
-  [zoom>=16][area>3200000],
-  [zoom>=17][area>800000],
-  [zoom>=18][area>200000] {
-    text-size: 16;
-    text-wrap-width: 125;
-  }
-  [zoom>=17][area>3200000],
-  [zoom>=18][area>800000] {
-    text-size: 18;
-    text-wrap-width: 150;
-  }
 }
 
 #waterway_label[type='river'][zoom>=12],
-#waterway_label[type='canal'][zoom>=14],
-#waterway_label[type='stream'][zoom>=16] {
+#waterway_label[type='canal'][zoom>=14] {
   text-avoid-edges: true;
   text-name: @name;
   text-face-name: @sans_italic;
@@ -338,28 +184,11 @@
   text-size: 10;
   text-character-spacing: 0.25;
   text-dy: -7;
-  [type='river'][zoom=14],
-  [type='canal'][zoom=16],
-  [type='stream'][zoom>=18] {
+  [type='river'][zoom=14] {
     text-size: 10;
-  }
-  [type='river'][zoom=15],
-  [type='canal'][zoom>=17] {
-    text-size: 11;
-  }
-  [type='river'][zoom>=16],
-  [type='canal'][zoom>=18] {
-    text-size: 12;
-    text-spacing: 300;
   }
 }
 
-
-// =====================================================================
-// ROAD LABELS
-// =====================================================================
-
-// highway shield
 #road_label[class='motorway'][zoom>=8][reflen>=1][reflen<=6],
 #road_label[class='main'][zoom>=8][reflen>=1][reflen<=6] {
   shield-name: "[ref]";
@@ -372,22 +201,12 @@
   shield-min-padding: 10;
   shield-min-distance: 40;
   [zoom>=12] { shield-min-distance: 80; }
-  [zoom>=15] {
-    shield-spacing: 400;
-    shield-size: 11;
-    shield-file: url("img/shield/motorway_sm_[reflen].png");
-  }
 }
 
-// regular labels
 #road_label['mapnik::geometry_type'=2] {
-  // The z14 filter is *not* redundant to logic in SQL queries. Because z14
-  // includes all data for z14+ via overzooming, the streets included in a
-  // z14 vector tile include more features than ideal for optimal performance.
   [class='motorway'][zoom>=12],
   [class='main'][zoom>=12],
   [class='street'][zoom<=14][len>2500],
-  [class='street'][zoom>=15],
   [class='street_limited'] {
     text-avoid-edges: true;
     text-name: @name;
@@ -398,7 +217,7 @@
     text-halo-fill: fadeout(@land,85);
     text-halo-radius: 2;
     text-halo-rasterizer: fast;
-    text-min-distance: 200; // only for labels w/ the same name
+    text-min-distance: 200;
     [zoom>=14] { text-size: 12; }
     [zoom>=16] { text-size: 14; }
     [zoom>=18] { text-size: 16; }
@@ -412,7 +231,6 @@
   }
 }
 
-// less prominent labels for service + paths
 #road_label[zoom>=14]['mapnik::geometry_type'=2]
 [class!='motorway']
 [class!='main']
@@ -427,11 +245,5 @@
   text-halo-fill: fadeout(@land,60);
   text-halo-radius: 2;
   text-halo-rasterizer: fast;
-  text-min-distance: 200; // only for labels with the same name
-  [zoom>=16] { text-size: 12; }
-  [zoom>=18] { text-size: 14; }
-  [class='aerialway'] { text-fill: #765; }
-  [type='piste'] { text-fill: lighten(#558,20); }
-  [type='piste'][zoom>=15] { text-fill: lighten(#558,10); }
-  [type='piste'][zoom>=18] { text-fill: #558; }
+  text-min-distance: 200;
 }

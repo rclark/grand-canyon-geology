@@ -5,7 +5,7 @@ var split = require('split');
 var path = require('path');
 
 var mss = fs.createReadStream(path.resolve(__dirname, '..', 'grandcanyon.tm2', 'geology.mss'));
-var glpath = path.resolve(__dirname, '..', 'grandcanyon.json');
+var glpath = path.resolve(__dirname, '..', 'grandcanyon.gl.json');
 var gl = require(glpath);
 var background;
 gl.layers = gl.layers.reduce(function(layers, layer) {

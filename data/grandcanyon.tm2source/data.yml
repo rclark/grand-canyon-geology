@@ -3,12 +3,12 @@ _prefs:
   inspector: false
   mapid: ''
   rev: ''
-  saveCenter: true
+  saveCenter: false
 attribution: "<a href=\"http://geomaps.wr.usgs.gov/arizona/\">George Billingsley et al.</a> and Ryan Clark, 2014"
 center: 
-  - -111.4268
-  - 36.0684
-  - 12
+  - -111.5181
+  - 36.0591
+  - 10
 description: ''
 Layer: 
   - id: geounits
