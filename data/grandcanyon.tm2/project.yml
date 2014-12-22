@@ -1,0 +1,28 @@
+_prefs: 
+  mapid: rclark.d2f57dc3
+  saveCenter: false
+_properties: {}
+attribution: "<a href=\"http://geomaps.wr.usgs.gov/arizona/\">George Billingsley et al.</a> <a href=\"https://www.mapbox.com/about/maps/\">© Mapbox © OpenStreetMap</a> and Ryan Clark, 2014"
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - -111.9843
+  - 36.1498
+  - 11
+description: ''
+format: "png8:m=h"
+interactivity_layer: ''
+layers: null
+maxzoom: 14
+minzoom: 10
+name: Geologic Map of the Grand Canyon
+source: "mapbox:///rclark.u33j714i,mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v5"
+styles: 
+  - terrain.mss
+  - geology.mss
+  - roads.mss
+  - labels.mss
+template: ''

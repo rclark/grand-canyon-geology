@@ -1,0 +1,22 @@
+{
+  "name": "grand-canyon-geology",
+  "version": "1.0.0",
+  "description": "grand-canyon-geology ====================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rclark/grand-canyon-geology.git"
+  },
+  "author": "Ryan Clark",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rclark/grand-canyon-geology/issues"
+  },
+  "homepage": "https://github.com/rclark/grand-canyon-geology",
+  "dependencies": {
+    "split": "^0.3.2"
+  }
+}
