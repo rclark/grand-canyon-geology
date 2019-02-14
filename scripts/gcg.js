@@ -39,11 +39,12 @@ var gcg = {
 };
 
 L.mapbox.tileLayer('rclark.d2f57dc3', {
-  accessToken: 'pk.eyJ1IjoicmNsYXJrIiwiYSI6IlQwaklqazAifQ.OWuTG3XPSdvoq_zGL0-1tA',
+  accessToken: 'pk.eyJ1IjoicmNsYXJrIiwiYSI6ImNqczU3c3EzaDBjdzI0YW9idG1ibmxvdGkifQ.PtPykGD3icIQnfHJezCb_w',
   attribution: '<a href="http://geomaps.wr.usgs.gov/arizona/">George Billingsley et al.</a> <a href="https://www.mapbox.com/about/maps/">© Mapbox © OpenStreetMap</a> and Ryan Clark, 2014'
 }).addTo(gcg.map);
 
-L.mapbox.gridLayer('rclark.h39e40a5', { accessToken: 'pk.eyJ1IjoicmNsYXJrIiwiYSI6IlQwaklqazAifQ.OWuTG3XPSdvoq_zGL0-1tA' })
+// was rclark.h39e40a5
+L.mapbox.gridLayer('rclark.grand-canyon-geology', { accessToken: 'pk.eyJ1IjoicmNsYXJrIiwiYSI6ImNqczU3c3EzaDBjdzI0YW9idG1ibmxvdGkifQ.PtPykGD3icIQnfHJezCb_w' })
   .on('mouseover', gcg.gridInteraction)
   .on('click', gcg.gridInteraction)
   .addTo(gcg.map);
