@@ -38,10 +38,10 @@ var gcg = {
   }
 };
 
-L.mapbox.tileLayer('rclark.d2f57dc3', {
-  accessToken: 'pk.eyJ1IjoicmNsYXJrIiwiYSI6ImNqczU3c3EzaDBjdzI0YW9idG1ibmxvdGkifQ.PtPykGD3icIQnfHJezCb_w',
-  attribution: '<a href="http://geomaps.wr.usgs.gov/arizona/">George Billingsley et al.</a> <a href="https://www.mapbox.com/about/maps/">© Mapbox © OpenStreetMap</a> and Ryan Clark, 2014'
-}).addTo(gcg.map);
+// L.mapbox.tileLayer('rclark.d2f57dc3', {
+//   accessToken: 'pk.eyJ1IjoicmNsYXJrIiwiYSI6ImNqczU3c3EzaDBjdzI0YW9idG1ibmxvdGkifQ.PtPykGD3icIQnfHJezCb_w',
+//   attribution: '<a href="http://geomaps.wr.usgs.gov/arizona/">George Billingsley et al.</a> <a href="https://www.mapbox.com/about/maps/">© Mapbox © OpenStreetMap</a> and Ryan Clark, 2014'
+// }).addTo(gcg.map);
 
 // was rclark.h39e40a5
 L.mapbox.gridLayer('rclark.grand-canyon-geology', { accessToken: 'pk.eyJ1IjoicmNsYXJrIiwiYSI6ImNqczU3c3EzaDBjdzI0YW9idG1ibmxvdGkifQ.PtPykGD3icIQnfHJezCb_w' })

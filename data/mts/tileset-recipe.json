@@ -1,0 +1,38 @@
+{
+  "name": "grand-canyon-mts",
+  "recipe": {
+    "version": 1,
+    "layers": {
+      "geolines": {
+        "source": "mapbox://tileset-source/rclark/grand-canyon",
+        "minzoom": 10,
+        "maxzoom": 14,
+        "features": {
+          "filter": [
+            "match",
+            ["geometry-type"],
+            ["Polygon", "MultiPolygon"],
+            false,
+            true
+          ],
+          "simplification": 1
+        }
+      },
+      "geopolys": {
+        "source": "mapbox://tileset-source/rclark/grand-canyon",
+        "minzoom": 10,
+        "maxzoom": 14,
+        "features": {
+          "filter": [
+            "match",
+            ["geometry-type"],
+            ["Polygon", "MultiPolygon"],
+            true,
+            false
+          ],
+          "simplification": 1
+        }
+      }
+    }
+  }
+}
