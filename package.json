@@ -4,7 +4,8 @@
   "description": "grand-canyon-geology ====================",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node serve-local.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   "homepage": "https://github.com/rclark/grand-canyon-geology",
   "dependencies": {
     "csv-parse": "^4.10.1",
+    "csv-stringify": "^5.5.0",
     "form-data": "^3.0.0",
     "split": "^0.3.2"
   }

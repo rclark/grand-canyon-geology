@@ -1,6 +1,2 @@
-data/grandcanyon.tm2source/data.xml
-data/grandcanyon.tm2source/.thumb.png
-data/grandcanyon.tm2/.thumb.png
-data/grandcanyon.tm2/project.xml
-data/grandcanyon.tm2/bookmarks.yml
-data/mts/*.ld.json
+data/*.geojson
+mapbox-tileset/*.ld.json
