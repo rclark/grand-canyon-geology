@@ -1,11 +1,13 @@
 {
   "name": "grand-canyon-geology",
-  "version": "1.0.0",
-  "description": "grand-canyon-geology ====================",
+  "version": "2.0.0",
+  "description": "grand-canyon-geology",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node serve-local.js"
+    "start": "node serve-local.js",
+    "bucket-stack": "./data/storage/bucket-stack.sh",
+    "update-data": "node data/storage/update-data.js",
+    "get-data": "node data/storage/get-data.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +20,8 @@
   },
   "homepage": "https://github.com/rclark/grand-canyon-geology",
   "dependencies": {
+    "aws-sdk": "^2.691.0",
     "csv-parse": "^4.10.1",
-    "csv-stringify": "^5.5.0",
-    "form-data": "^3.0.0",
-    "split": "^0.3.2"
+    "csv-stringify": "^5.5.0"
   }
 }
