@@ -10,7 +10,7 @@ html, body, #map { height: 100%; }
 
 #title-container {
     position: absolute;
-    bottom: 10px;
+    bottom: 40px;
 }
 
 #title-content {

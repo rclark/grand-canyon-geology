@@ -19,16 +19,10 @@ const features = (event) => {
 
   const data = map.queryRenderedFeatures(event.point, { layers: ['geopolys'] });
   if (!data[0]) return;
-
-  const unit = describeUnit(data[0].properties.unit);
-  if (!unit) return;
-
-  unit.color = data[0].properties.color;
-  return unit;
+  return data[0].properties;
 };
 
 map.on('mousemove', 'geopolys', (event) => {
-  console.log(event);
   const unit = features(event);
   if (!unit) return;
 
