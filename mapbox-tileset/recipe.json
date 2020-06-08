@@ -1,37 +1,44 @@
 {
-  "name": "grand-canyon-mts",
-  "recipe": {
-    "version": 1,
-    "layers": {
-      "geolines": {
-        "source": "mapbox://tileset-source/rclark/grand-canyon",
-        "minzoom": 10,
-        "maxzoom": 14,
-        "features": {
-          "filter": [
-            "match",
-            ["geometry-type"],
-            ["Polygon", "MultiPolygon"],
-            false,
-            true
+  "version": 1,
+  "layers": {
+    "geolines": {
+      "source": "mapbox://tileset-source/rclark/grand-canyon-v2",
+      "minzoom": 10,
+      "maxzoom": 14,
+      "features": {
+        "filter": [
+          "all",
+          [
+            "any",
+            ["match", ["geometry-type"], "LineString", true, false],
+            ["match", ["geometry-type"], "MultiLineString", true, false]
           ],
-          "simplification": 1
-        }
-      },
-      "geopolys": {
-        "source": "mapbox://tileset-source/rclark/grand-canyon",
-        "minzoom": 10,
-        "maxzoom": 14,
-        "features": {
-          "filter": [
-            "match",
-            ["geometry-type"],
-            ["Polygon", "MultiPolygon"],
-            true,
+          [
+            "case",
+            [">", ["zoom"], 10], true,
+            [
+              "any",
+              ["==", ["get", "fgdc"], "2.1.1"],
+              ["==", ["get", "fgdc"], "2.1.3"],
+              ["==", ["get", "fgdc"], "2.1.7"]
+            ], true,
             false
-          ],
-          "simplification": 1
-        }
+          ]
+        ],
+        "simplification": 1
+      }
+    },
+    "geopolys": {
+      "source": "mapbox://tileset-source/rclark/grand-canyon-v2",
+      "minzoom": 10,
+      "maxzoom": 14,
+      "features": {
+        "filter": [
+          "any",
+          ["match", ["geometry-type"], "Polygon", true, false],
+          ["match", ["geometry-type"], "MultiPolygon", true, false]
+        ],
+        "simplification": ["case", ["<", ["zoom"], 11], 4, 1]
       }
     }
   }
