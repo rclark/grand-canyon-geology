@@ -1,2 +1,0 @@
-data/geolines.geojson filter=lfs diff=lfs merge=lfs -text
-data/geopolys.geojson filter=lfs diff=lfs merge=lfs -text
