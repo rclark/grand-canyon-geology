@@ -10,8 +10,8 @@ const s3 = new AWS.S3({ credentials });
 const Bucket = 'grand-canyon-geology';
 
 const output = {
-  polys: path.join(__dirname, '..', 'geopolys-2.geojson'),
-  lines: path.join(__dirname, '..', 'geolines-2.geojson'),
+  polys: path.join(__dirname, '..', 'geopolys.geojson'),
+  lines: path.join(__dirname, '..', 'geolines.geojson'),
 };
 
 const content = {

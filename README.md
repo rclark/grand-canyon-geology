@@ -20,7 +20,7 @@ _George Billingsley, 2013_
 
 ## Compiled data
 
-**unit-definitions.csv:** A table of unit names and descriptions for each unit depicted on the map. This file is included in the Git repository, and you can even open a PR if you have suggestions!
+**unit-definitions.csv:** A table of unit names and descriptions for each unit depicted on the map. This file is included in the Git repository, and pull requests are welcome if you have suggestions for improvement!
 
 **geopolys.geojson:** GeoJSON representation of the polygons that represent various geologic units on the map. This is a ~400MB file, too big for distribution via Git, so it is not included in this repository.
 
@@ -30,7 +30,14 @@ _George Billingsley, 2013_
 
 I'm happy to share the GeoJSON files. You can download them by running a script in this repository. You can do whatever you'd like to do with them.
 
-To download them, you must already have Node.js installed. The script will download the data files into the `data` folder in your local clone of this repository.
+You can get the data files from the following URLs:
+
+```
+https://grand-canyon-geology.s3.amazonaws.com/geopolys.geojson
+https://grand-canyon-geology.s3.amazonaws.com/geolines.geojson
+```
+
+To download them for use in this repo, you must already have Node.js installed. The script will download the data files into the `data` folder in your local clone of the repository.
 
 ```
 ❯ git clone https://github.com/rclark/grand-canyon-geology
@@ -41,9 +48,9 @@ To download them, you must already have Node.js installed. The script will downl
 
 ## Suggestions?
 
-I've made some rudimentary attempts to homogenize and clean up the datasets produced by the above publications. These data are all available for free through this repository.
+I've made some rudimentary attempts to homogenize and clean up the datasets produced by the above publications. These compiled data are all available for free.
 
-These data could be better! I welcome advice / suggestions [in the issue tracker]. Generally, I'm not willing to adjust **the locations** of contacts or faults, but I am very willing to accept advice for better unit descriptions or correlation of units across publication boundaries.
+These data could be better! I welcome advice / suggestions [in the issue tracker]. Generally, I'm not willing to adjust **the locations** of contacts or faults, but I am very willing to accept advice for **better unit descriptions or correlation of units** across publication boundaries.
 
 [Geologic map of the Mount Trumbull 30 x 60 quadrangle]: http://pubs.usgs.gov/imap/i2766/
 [Geologic map of the Grand Canyon 30' x 60' quadrangle]: http://pubs.usgs.gov/imap/i-2688/
