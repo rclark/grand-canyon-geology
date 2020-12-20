@@ -3,7 +3,7 @@ mapboxgl.accessToken =
 
 const map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/rclark/ck97hq2xy1n941ipdlyw7x38h',
+  style: 'mapbox://styles/rclark/ckixofj0b2mbp19ozzcqi78d7',
   center: [-111.98741912841797, 36.14951909060777],
   zoom: 11,
   maxZoom: 14,
