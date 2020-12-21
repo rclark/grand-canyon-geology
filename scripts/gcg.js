@@ -3,7 +3,8 @@ mapboxgl.accessToken =
 
 const map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/rclark/ckixofj0b2mbp19ozzcqi78d7',
+  style: 'mapbox://styles/rclark/ckixofj0b2mbp19ozzcqi78d7', // raster hillshade
+  // style: 'mapbox://styles/rclark/ckixq3wq716h719rr9smfrkij', // vector hillshade
   center: [-111.98741912841797, 36.14951909060777],
   zoom: 11,
   maxZoom: 14,
@@ -12,6 +13,8 @@ const map = new mapboxgl.Map({
     [-114.0326, 35.4754],
     [-110.9592, 36.5242],
   ],
+  pitch: 10,
+  bearing: 0,
 });
 
 const features = (event) => {
@@ -43,3 +46,19 @@ map.on('click', (event) => {
   $('#full-description').html(html);
   $('.scroll-btn').trigger('click');
 });
+
+map.on('load', () => {
+  map.addSource('mapbox-dem', {
+    'type': 'raster-dem',
+    'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+    'tileSize': 512,
+    'maxzoom': 14
+  });
+  // add the DEM source as a terrain layer with exaggerated height
+  map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+
+  var nav = new mapboxgl.NavigationControl({
+    visualizePitch: true
+  });
+  map.addControl(nav, 'top-left');
+})
