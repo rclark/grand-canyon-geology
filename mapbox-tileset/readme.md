@@ -36,9 +36,9 @@ The recipe is already associated with the tileset `rclark.grand-canyon-dev`, but
     > tilesets update-recipe rclark.grand-canyon-dev ./mapbox-tileset/recipe.json
 
     > tilesets publish rclark.grand-canyon-dev
-    {"message": "Processing rclark.grand-canyon-mts", "jobId": "cl3drpjsz003309mf5t7ybc5q"}
+    {"message": "Processing rclark.grand-canyon-dev", "jobId": "cl3drpjsz003309mf5t7ybc5q"}
 
-    ✔ Tileset job received. Visit https://studio.mapbox.com/tilesets/rclark.grand-canyon-mts or run tilesets job rclark.grand-canyon-mts cl3drpjsz003309mf5t7ybc5q to view the status of your tileset.
+    ✔ Tileset job received. Visit https://studio.mapbox.com/tilesets/rclark.grand-canyon-dev or run tilesets job rclark.grand-canyon-dev cl3drpjsz003309mf5t7ybc5q to view the status of your tileset.
     ```
 
     *Note* the `grand-canyon-mts` tileset can be used to stage and view changes. Style `ckixq3wq716h719rr9smfrkij` points at this tileset.
