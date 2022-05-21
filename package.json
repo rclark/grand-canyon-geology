@@ -4,7 +4,7 @@
   "description": "grand-canyon-geology",
   "main": "index.js",
   "scripts": {
-    "start": "node serve-local.js",
+    "start": "node serve-local.js && open http://localhost:8080",
     "bucket-stack": "./data/storage/bucket-stack.sh",
     "update-data": "node data/storage/update-data.js",
     "get-data": "node data/storage/get-data.js"
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/rclark/grand-canyon-geology",
   "dependencies": {
-    "aws-sdk": "^2.814.0",
+    "aws-sdk": "^2.1140.0",
     "csv-parse": "^4.10.1",
     "csv-stringify": "^5.5.0"
   }

@@ -2,8 +2,8 @@ const AWS = require('aws-sdk');
 const fs = require('fs');
 const path = require('path');
 
-const credentials = new AWS.ProcessCredentials({ profile: 'softies' });
-const s3 = new AWS.S3({ credentials });
+process.env.AWS_PROFILE = 'management';
+const s3 = new AWS.S3();
 const Bucket = 'grand-canyon-geology';
 
 const input = {
