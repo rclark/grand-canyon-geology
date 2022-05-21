@@ -44,3 +44,19 @@ map.on('click', (event) => {
   $('#full-description').html(html);
   $('.scroll-btn').trigger('click');
 });
+
+map.on('load', () => {
+  map.addSource('mapbox-dem', {
+    'type': 'raster-dem',
+    'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+    'tileSize': 512,
+    'maxzoom': 14
+  });
+
+  // add the DEM source as a terrain layer with exaggerated height
+  map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+
+  map.addControl(new mapboxgl.NavigationControl({
+    visualizePitch: true
+  }), 'top-left');
+})
