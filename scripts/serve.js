@@ -7,7 +7,7 @@ const fs = require('fs');
 const base = path.resolve(__dirname, '..');
 
 http.createServer((req, res) => {
-  const uri = new URL(req.url, 'http://localhost:8080/')
+  const uri = new URL(req.url, 'http://0.0.0.0:8080/')
   const file = uri.pathname.slice(1);
 
   if (uri.pathname === '/')

@@ -57,6 +57,7 @@ map.on('load', () => {
   map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
 
   map.addControl(new mapboxgl.NavigationControl({
+    showZoom: false,
     visualizePitch: true
-  }), 'top-left');
+  }), 'top-right');
 })
