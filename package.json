@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/rclark/grand-canyon-geology",
   "dependencies": {
-    "aws-sdk": "^2.814.0",
+    "aws-sdk": "^2.1140.0",
     "csv-parse": "^4.10.1",
     "csv-stringify": "^5.5.0"
   }
