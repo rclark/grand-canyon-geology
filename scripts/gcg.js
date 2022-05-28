@@ -12,6 +12,7 @@ const map = new mapboxgl.Map({
     [-114.0326, 35.4754],
     [-110.9592, 36.5242],
   ],
+  touchPitch: false,
   hash: true
 });
 
