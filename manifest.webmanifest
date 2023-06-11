@@ -1,0 +1,15 @@
+{
+  "background_color": "black",
+  "description": "Geology of the Grand Canyon and Vicinity",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "icons/192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "name": "Geology of the Grand Canyon",
+  "short_name": "Grand Canyon Geology",
+  "start_url": "."
+}
