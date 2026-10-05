@@ -1,3 +1,7 @@
 data/*.geojson
 mapbox-tileset/*.ld.json
 node_modules/
+
+# Terraform working files
+.terraform/
+*.tfplan

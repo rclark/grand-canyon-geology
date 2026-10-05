@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start": "node serve-local.js",
-    "bucket-stack": "./data/storage/bucket-stack.sh",
     "update-data": "node data/storage/update-data.js",
     "get-data": "node data/storage/get-data.js"
   },
